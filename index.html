@@ -1,129 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>QuietComfortHQ – Home Comfort & Air Quality Guides</title>
-
-  <meta name="description" content="Honest, research-backed guides to improve home comfort. Compare dehumidifiers, air purifiers, and humidifiers without marketing hype.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Honest, research-backed guides to improve home comfort and air quality. Dehumidifiers, air purifiers, and humidifiers—explained simply." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <style>
-    body {
-      font-family: Georgia, serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      color: #111;
-      background-color: #ffffff;
+    :root{
+      --bg:#fbfbf9;
+      --text:#1b1b1b;
+      --muted:#5b5b5b;
+      --card:#ffffff;
+      --border:#e9e6df;
+      --max: 860px;
     }
 
-    header {
-      text-align: center;
-      padding: 30px 20px 10px;
+    *{ box-sizing:border-box; }
+
+    body{
+      margin:0;
+      font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+      color:var(--text);
+      background:var(--bg);
+      line-height:1.6;
     }
 
-    header img {
-      max-width: 520px;
-      width: 100%;
-      height: auto;
+    a{ color: inherit; }
+
+    header{
+      text-align:center;
+      padding:28px 16px 12px;
     }
 
-    header p {
-      margin-top: 10px;
-      color: #555;
-      font-size: 16px;
+    .logo img{
+      max-width:520px;
+      width:100%;
+      height:auto;
+      display:block;
+      margin:0 auto;
     }
 
-    main {
-      max-width: 820px;
-      margin: auto;
-      padding: 20px;
+    .tagline{
+      margin-top:10px;
+      color:var(--muted);
+      letter-spacing:0.08em;
+      text-transform:uppercase;
+      font-size:13px;
     }
 
-    h1, h2, h3 {
-      font-weight: bold;
+    main{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:0 18px 30px;
     }
 
-    ul {
-      padding-left: 20px;
+    h1{
+      font-size:clamp(30px, 4vw, 44px);
+      line-height:1.15;
+      margin:18px 0 14px;
+      letter-spacing:-0.02em;
     }
 
-    .nav-links {
-      margin: 30px 0;
-      padding: 20px;
-      background: #f7f7f7;
-      border-radius: 6px;
+    h2{
+      margin-top:28px;
+      margin-bottom:10px;
+      font-size:24px;
     }
 
-    .nav-links a {
-      display: block;
-      margin: 8px 0;
-      font-size: 18px;
-      color: #003366;
-      text-decoration: none;
-      font-weight: bold;
+    p, li{
+      color:var(--muted);
+      font-size:18px;
     }
 
-    .nav-links a:hover {
-      text-decoration: underline;
+    ul{
+      margin: 10px 0 16px 22px;
     }
 
-    footer {
-      text-align: center;
-      padding: 25px 15px;
-      font-size: 14px;
-      color: #666;
-      border-top: 1px solid #eee;
-      margin-top: 40px;
+    .card{
+      border:1px solid var(--border);
+      background:var(--card);
+      border-radius:14px;
+      padding:16px 18px;
+      margin:18px 0;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:12px 16px;
+      border-radius:10px;
+      border:1px solid var(--border);
+      background:#111;
+      color:#fff;
+      text-decoration:none;
+      font-size:16px;
+      margin-top:10px;
+    }
+
+    footer{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:18px;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    footer a{
+      color:var(--muted);
+      text-decoration:underline;
+      text-underline-offset:2px;
     }
   </style>
 </head>
 
 <body>
+  <header>
+    <a class="logo" href="/" aria-label="QuietComfortHQ home">
+      <img src="/images/logo.png" alt="QuietComfortHQ logo" />
+    </a>
+    <p class="tagline">Home Comfort • Air Quality • Honest Picks</p>
+  </header>
 
-<header>
-  <a href="/">
-    <img src="/images/logo.png" alt="QuietComfortHQ logo">
-  </a>
-  <p>Home Comfort • Air Quality • Honest Picks</p>
-</header>
+  <main>
+    <h1>Make Your Home More Comfortable — Without Guesswork</h1>
 
-<main>
+    <p>
+      QuietComfortHQ helps homeowners and renters choose the right equipment to improve
+      comfort and air quality — without marketing hype or confusing specs.
+    </p>
 
-  <h1>Make Your Home More Comfortable — Without Guesswork</h1>
+    <!-- START HERE CARD -->
+    <div class="card">
+      <h2 style="margin-top:0;">Start Here</h2>
+      <p>
+        If your home feels damp, musty, or uncomfortable, excess moisture is often the cause.
+        Our most complete guide walks you through the best dehumidifiers for real homes.
+      </p>
+      <a class="btn" href="/dehumidifiers.html">
+        Best Dehumidifiers for Basements & Crawl Spaces →
+      </a>
+    </div>
 
-  <p>
-    QuietComfortHQ helps homeowners and renters choose the right dehumidifiers,
-    air purifiers, and humidifiers for their space using clear, unbiased,
-    research-backed comparisons.
-  </p>
+    <!-- WHAT WE COVER -->
+    <h2>What We Cover</h2>
+    <ul>
+      <li>Dehumidifiers for basements, crawl spaces, and damp homes</li>
+      <li>Quiet air purifiers for bedrooms and apartments</li>
+      <li>Humidifiers sized correctly for real rooms</li>
+    </ul>
 
-  <h2>What We Cover</h2>
-  <ul>
-    <li>Dehumidifiers for basements & crawl spaces</li>
-    <li>Quiet air purifiers for bedrooms & apartments</li>
-    <li>Humidifiers sized for real rooms</li>
-  </ul>
+    <!-- TRUST CARD -->
+    <div class="card">
+      <h2 style="margin-top:0;">How We Make Picks</h2>
+      <p>
+        We focus on real-world factors that matter long-term: noise, effectiveness, maintenance,
+        and overall value. If we use affiliate links, they’re clearly disclosed — and never
+        determine our recommendations.
+      </p>
+    </div>
+  </main>
 
-  <p>
-    Our guides are updated regularly and focus on real-world use — not marketing hype.
-  </p>
-
-  <div class="nav-links">
-    <h3>Start Here</h3>
-    <a href="/dehumidifiers.html">Best Dehumidifiers for Home & Basement</a>
-    <a href="/air-purifiers.html">Best Quiet Air Purifiers</a>
-    <a href="/humidifiers.html">Best Humidifiers for Bedrooms & Homes</a>
-  </div>
-
-</main>
-
-<footer>
-  <p class="affiliate-disclosure">
-    As an Amazon Associate, QuietComfortHQ earns from qualifying purchases.
-  </p>
-  <p>© 2026 QuietComfortHQ</p>
-</footer>
-
+  <footer>
+    © 2026 QuietComfortHQ ·
+    <a href="/about.html">About</a> ·
+    <a href="/contact.html">Contact</a> ·
+    <a href="/disclosure.html">Disclosure</a>
+  </footer>
 </body>
 </html>
